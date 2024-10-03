@@ -1,0 +1,125 @@
+/* General body and container styling */
+body {
+    background-color: rgb(232, 238, 238);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Input container */
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+}
+
+.input-container input[type="button"] {
+    background-color: #3da33d;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: #60b160;
+}
+
+/* Category container styling */
+.category-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-container h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #3da33d;
+}
+
+/* Todo list styles */
+ul.todoList {
+    width: 100%;
+}
+
+ul.todoList li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid #a19f9f;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul.todoList li:hover {
+    background-color: #cbcaca;
+}
+
+ul.todoList li p {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+/* Buttons for editing and deleting tasks */
+.btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn {
+    color: #ff0000;
+}
+
+.editBtn {
+    color: #008000;
+}
+
+/* Category-specific colors (optional) */
+.category-container.work {
+    border-left: 4px solid #007bff;
+}
+
+.category-container.personal {
+    border-left: 4px solid #ff7f50;
+}
+
+.category-container.urgent {
+    border-left: 4px solid #ff0000;
+}
